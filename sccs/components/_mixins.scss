@@ -1,0 +1,21 @@
+@mixin links($link, $visited, $hover, $active) {
+    & {
+        color: $link;
+
+        &:visited {
+            color: $visited;
+        }
+
+        &:hover {
+            color: $hover;
+        }
+
+        &:active, &:focus {
+            color: $active;
+        }
+    }
+}
+
+@mixin transition-all {
+    transition: 0.5s;
+}

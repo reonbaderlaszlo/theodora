@@ -1,0 +1,119 @@
+<?php echo $header; ?>
+<main>
+<section class="index">
+<a name="index"></a>
+	<div class="container">
+		<div class="logo-wrapper clear">
+			<a href="#" class="lidl-logo-big"></a>
+			<a href="#" class="theodora-logo-big"></a>
+			<div class="bird"></div>
+		</div>
+		<h1 class="custom-h">Fedezd fel a Káli-medence szépségeit a Theodorával!</h1>
+		<p class="custom-p">Promóció időtartama: 2016. június 13–26.</p>
+		<p class="custom-p">Vásárolj <span>6 palack 1,5 literes Theodora ásványvizet</span> BÁRMELY LIDL áruházban, töltsd fel a vásárlást igazoló AP kódot a vásárlás időpontjával és nyerd meg az értékes ajándékok egyikét!</p>
+		<div class="prize-wrapper clear">
+			<div class="kali"></div>
+			<div class="gopro"></div>
+			<div class="voucher"></div>
+		</div>
+	</div>
+</section>
+<div data-scroll-speed="4" class="mountain">
+	<div data-scroll-speed="3" class="theodora-water"></div>
+</div>
+
+<section data-scroll-speed="2" class="upload">
+<a name="upload"></a>
+	<div class="container">
+		<h1>Kódfeltöltés</h1>
+		<form method="post">
+			<div class="form-control two">
+				<input type="text" placeholder="Név">
+				<input type="email" placeholder="E-mail">
+			</div>
+			<div class="form-control">
+				<input type="text" placeholder="AP-kód*">
+				<p>*Az AP kód a vásárlást igazoló blokk alján szereplő, 8 vagy 9 jegyű számsor. Pl: AP 123456789 vagy A12345678</p>
+			</div>
+			<h2>A vásárlás időpontja</h2>
+			<div class="form-control four">
+				<select>
+					<option selected disabled>Hónap</option>
+					<option value="">Június</option>
+					<option value="">Július</option>
+					<option value="">Augusztus</option>
+				</select>
+				<select>
+					<option selected disabled>Nap</option>
+					<?php for($i = 1; $i < 32; $i++){
+
+						?>
+						<option value=""><?php echo $i; ?></option>
+						
+						<?php
+
+						} ?>
+				</select>
+				<select>
+					<option selected disabled>Óra</option>
+					<?php for($i = 0; $i < 24; $i++){
+
+						?>
+						<option value=""><?php echo $i; ?></option>
+						
+						<?php
+
+						} ?>
+				</select>
+				<select>
+					<option value="volvo" selected disabled>Perc</option>
+					<?php for($i = 1; $i < 60; $i++){
+
+						?>
+						<option value=""><?php echo $i; ?></option>
+						
+						<?php
+
+						} ?>
+				</select>
+			</div>
+			<div class="form-control center">
+				<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" /><label for="checkboxG1" class="css-label">Elfogadom a <a href="#">játékszabályt.</a></label>
+			</div>
+			<input class="btn-blue" type="submit" value="Feltöltöm">
+		</form>
+		<p class="custom-p2">Ha a kóddal most nem nyertél, akkor se dobd ki a blokkot, mert a fődíjsorsoláson minden feltöltött kód részt vesz, így akár Te is eltölthetsz egy romantikus hosszú hétvégét a Káli Art Innben!</p>
+	</div>
+</section>
+
+<section data-scroll-speed="2" class="prizes">
+<a name="prizes"></a>
+	<div class="container">
+		<h1>Nyeremények</h1>
+		<ul class="bxslider">
+			<li>
+				<img width="537" height="184" src="/<?php echo $this->config->rootDir; ?>/upload/images/slider/1.png" srcset="/<?php echo $this->config->rootDir; ?>/upload/images/slider/1.png 1x,
+				/<?php echo $this->config->rootDir; ?>/upload/images/slider/1-retina.png 2x
+				" alt="Fődíj">
+				<h3><span>1 db 3 napos romantikus hétvége</span>2 fő részére a Káli Art Innben<br><a href="http://www.kaliartinn.hu">www.kaliartinn.hu</a></h3>
+			</li>
+			<li>
+				<img width="246" height="197" src="/<?php echo $this->config->rootDir; ?>/upload/images/slider/2.png" srcset="/<?php echo $this->config->rootDir; ?>/upload/images/slider/2.png 1x,
+				/<?php echo $this->config->rootDir; ?>/upload/images/slider/2-retina.png 2x
+				" alt="GoPro">
+				<h3>Kiemelt nyeremény <span>3db GoPro Session Kamera</span></h3>
+			</li>
+			<li>
+				<img width="293" height="223" src="/<?php echo $this->config->rootDir; ?>/upload/images/slider/3.png" srcset="/<?php echo $this->config->rootDir; ?>/upload/images/slider/3.png 1x,
+				/<?php echo $this->config->rootDir; ?>/upload/images/slider/3-retina.png 2x
+				" alt="Utalványok">
+				<h3>További díjak:<br><span>100 DB 5.000 Ft </span><span>értékű vásárlási utalvány</span></h3>
+			</li>
+		</ul>
+	</div>
+</section>
+<div class="mountain custom">
+	<div class="theodora-water"></div>
+</div>
+</main>
+<?php echo $footer; ?>

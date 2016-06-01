@@ -1,0 +1,879 @@
+/* NORMALIZE */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+article, figcaption, figure, footer, header, aside, main, nav, section {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+  background-color: transparent;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+}
+
+img {
+  border-style: none;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+input {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+button, input, select, textarea {
+  margin: 0;
+  font: inherit;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, [type="submit"] {
+  -webkit-appearance: button;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+}
+
+button::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+}
+
+textarea {
+  overflow: auto;
+}
+
+button, select {
+  text-transform: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+.clear:before, .container:before, .clear:after, .container:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after, .container:after {
+  clear: both;
+}
+
+/* TYPOGRAPHY */
+h1 {
+  text-align: center;
+  letter-spacing: 0.020em;
+  font-size: 32px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #0e4096;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  color: #0e4096;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0e4096;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 23px;
+  color: #0e4096;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* BUTTONS */
+.btn-blue {
+  display: block;
+  width: 300px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: solid 2px #a0d7fb;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #1b90db, #0b70c1);
+  background-color: #117dcb;
+  margin: 20px auto;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+/* FORMS */
+.form-control [type="text"], .form-control [type="email"], .form-control select {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: #6fcfff;
+  border: solid 2px #a0d7fb;
+  background-image: linear-gradient(to bottom, #c0e6ff, #5abaf4);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #00519c;
+}
+
+.form-control.two input {
+  width: 220px;
+  float: left;
+}
+
+.form-control.two input:first-child {
+  margin-right: 20px;
+}
+
+.form-control.four select {
+  float: left;
+  width: 90px;
+  margin-right: 10px;
+}
+
+.form-control.four select:first-child {
+  width: 160px;
+}
+
+.form-control.four select:last-child {
+  margin-right: 0;
+}
+
+.form-control.center {
+  text-align: center;
+}
+
+.form-control select {
+  color: #00519c;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  background: url("../images/base/caret.png") no-repeat center right 8px, linear-gradient(to bottom, #c0e6ff, #5abaf4);
+  background-size: 20px 11px, cover;
+}
+
+.form-control select::-ms-expand {
+  display: none;
+}
+
+.form-control ::-webkit-input-placeholder {
+  color: #00519c;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.form-control :-moz-placeholder {
+  /* Firefox 18- */
+  color: #00519c;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.form-control ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #00519c;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.form-control :-ms-input-placeholder {
+  color: #00519c;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.form-control input[type=checkbox].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.form-control input[type=checkbox].css-checkbox + label.css-label {
+  padding-left: 47px;
+  height: 31px;
+  display: inline-block;
+  line-height: 31px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: #0e4096;
+  font-family: "Open Sans", sans-serif;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 5px auto;
+}
+
+.form-control input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -31px;
+}
+
+.form-control label.css-label {
+  background-image: url("../images/base/checkbox.png");
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* BASE */
+.container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+@media (min-width: 48em) {
+  .container {
+    width: 744px;
+  }
+}
+
+@media (min-width: 64em) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 80em) {
+  .container {
+    width: 960px;
+  }
+}
+
+.browserupgrade {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #fff;
+  z-index: 9999;
+  padding: 50px;
+}
+
+.browserupgrade a {
+  text-decoration: underline;
+  color: #a52a2a;
+}
+
+body {
+  background: #dfeef7 url("../images/base/clouds.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "brandon-grotesque";
+}
+
+section {
+  position: relative;
+}
+
+main {
+  overflow: hidden;
+}
+
+/* HEADER */
+header {
+  background-color: rgba(0, 81, 156, 0.7);
+  height: 60px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header .mobile-icon {
+  display: none;
+  width: 33px;
+  height: 33px;
+  margin: 14px auto 0;
+  background: url("../images/base/menu-icon.png") no-repeat center;
+  background-size: contain;
+  transition: 0.5s;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+header .mobile-icon:focus {
+  outline: none;
+}
+
+header .mobile-icon.active {
+  background: url("../images/base/close.png") no-repeat center;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background-size: contain;
+}
+
+header nav {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+header li {
+  display: inline-block;
+}
+
+header li a {
+  height: 60px;
+  padding: 0 12px;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.020em;
+  line-height: 60px;
+  transition: 0.5s;
+}
+
+header li a:hover {
+  background-color: #00519c;
+}
+
+header a {
+  display: block;
+}
+
+header .theodora-logo {
+  width: 84px;
+  height: 42px;
+  background: url("../images/header/theodora-logo.png") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 10px;
+}
+
+header .lidl-logo {
+  width: 45px;
+  height: 45px;
+  background: url("../images/header/lidl-logo.png") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  right: 10px;
+}
+
+header .theodora-logo, header .lidl-logo {
+  top: 8px;
+}
+
+/* INDEX */
+.index .logo-wrapper {
+  width: 460px;
+  max-width: 100%;
+  margin: 85px auto 0;
+}
+
+.index .logo-wrapper a {
+  display: block;
+  float: left;
+}
+
+.index .logo-wrapper .bird {
+  float: left;
+}
+
+.index .logo-wrapper .lidl-logo-big {
+  width: 80px;
+  height: 80px;
+  background: url("../images/base/lidl-logo-big.png") no-repeat center;
+  background-size: contain;
+  margin-right: 71px;
+}
+
+.index .logo-wrapper .theodora-logo-big {
+  width: 159px;
+  height: 80px;
+  background: url("../images/base/theodora-logo-big.png") no-repeat center;
+  background-size: contain;
+  margin-right: 96px;
+}
+
+.index .logo-wrapper .bird {
+  width: 47px;
+  height: 40px;
+  background: url("../images/base/bird.png") no-repeat center;
+  background-size: contain;
+  margin-top: 14px;
+}
+
+.index .custom-h {
+  color: #e60004;
+  width: 500px;
+  margin: 37px auto 15px;
+  max-width: 100%;
+}
+
+.index .custom-p {
+  width: 620px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.index .custom-p:nth-of-type(1) {
+  margin-bottom: 15px;
+}
+
+.index .custom-p span {
+  color: #e60004;
+}
+
+.index .prize-wrapper {
+  width: 620px;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 0 30px;
+}
+
+.index .prize-wrapper div {
+  float: left;
+}
+
+.index .kali {
+  width: 172px;
+  height: 106px;
+  background: url("../images/base/kali.png") no-repeat center;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.index .gopro {
+  width: 164px;
+  height: 114px;
+  background: url("../images/base/gopro.png") no-repeat center;
+  background-size: contain;
+  margin-right: 50px;
+}
+
+.index .voucher {
+  width: 150px;
+  height: 107px;
+  background: url("../images/base/voucher.png") no-repeat center;
+  background-size: contain;
+}
+
+/* MOUNTAIN */
+.mountain {
+  height: 445px;
+  background: url("../images/base/mountain.png") no-repeat center top 50px;
+  background-size: cover;
+  position: relative;
+  margin-top: -245px;
+}
+
+.mountain.custom {
+  overflow: hidden;
+  z-index: -1;
+  margin-top: -640px;
+}
+
+.mountain.custom-2 {
+  margin-top: -215px;
+  overflow: hidden;
+}
+
+.mountain .theodora-water {
+  width: 675px;
+  max-width: 100%;
+  height: 643px;
+  background: url("../images/base/theodora-water.png") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  bottom: -378px;
+  right: 0;
+}
+
+/* UPLOAD */
+.upload {
+  background-color: #86c3e5;
+  padding-bottom: 53px;
+  z-index: 1;
+  margin-bottom: 58px;
+}
+
+.upload h1 {
+  margin: 48px 0 30px;
+}
+
+.upload form {
+  width: 460px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.upload form p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+}
+
+.upload h2 {
+  padding: 30px 0 15px;
+}
+
+.upload a {
+  text-decoration: underline;
+  color: #0e4096;
+}
+
+.upload .custom-p2 {
+  width: 605px;
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+.prizes h1 {
+  margin-bottom: 120px;
+}
+
+.prizes li {
+  text-align: center;
+}
+
+.prizes li:last-child span {
+  display: inline;
+}
+
+.prizes li:last-child span:last-child {
+  color: #0e4096;
+}
+
+.prizes h3 {
+  width: 460px;
+  margin: 30px auto 0;
+  max-width: 100%;
+}
+
+.prizes h3 span {
+  display: block;
+  color: #e60004;
+}
+
+.prizes h3 a {
+  text-transform: uppercase;
+  color: #567ea8;
+  font-size: 13px;
+  letter-spacing: 0.100em;
+}
+
+.prizes .bx-wrapper, .prizes .bx-viewport {
+  height: 345px !important;
+}
+
+.prizes .bx-controls-direction {
+  position: absolute;
+  width: 300px;
+  top: -50px;
+  left: 0;
+  right: 0;
+  top: 55px;
+  margin: 0 auto;
+}
+
+.prizes .bx-controls-direction a {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 26px 24px 24px 26px/26px 26px 24px 24px;
+  background-color: #00519c;
+  border: solid 2px #a0d7fb;
+  background-image: linear-gradient(to bottom, #1b90db, #0b70c1);
+}
+
+.prizes .bx-controls-direction span {
+  top: 50%;
+  left: 50%;
+  width: 11px;
+  height: 20px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.prizes .bx-controls-direction .bx-prev {
+  left: 0;
+}
+
+.prizes .bx-controls-direction .bx-prev span {
+  background: url("../images/base/left.png") no-repeat center;
+  background-size: contain;
+}
+
+.prizes .bx-controls-direction .bx-next {
+  right: 0;
+}
+
+.prizes .bx-controls-direction .bx-next span {
+  background: url("../images/base/right.png") no-repeat center;
+  background-size: contain;
+  left: 55%;
+}
+
+.prizes .bx-pager {
+  width: 140px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 62px;
+}
+
+.prizes .bx-pager a {
+  float: left;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 2px #00519c;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #00519c;
+  transition: 0.5s;
+  margin-right: 17px;
+}
+
+.prizes .bx-pager .bx-pager-item:last-child a {
+  margin-right: 0;
+}
+
+.prizes .bx-pager .active {
+  background-color: #00519c;
+  color: #fff;
+}
+
+/* GYIK */
+.gyik {
+  z-index: 1;
+}
+
+.gyik .box {
+  width: 620px;
+  margin: 0 auto;
+  max-width: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #0e4096;
+}
+
+.gyik h1 {
+  padding: 117px 0 50px;
+}
+
+.gyik .up {
+  text-transform: uppercase;
+  padding-bottom: 0;
+}
+
+.gyik .reg {
+  font-weight: 400;
+}
+
+.gyik p {
+  text-align: left;
+  font-size: 14px;
+  text-transform: none;
+  line-height: inherit;
+  padding-bottom: 15px;
+}
+
+.gyik .nop {
+  padding-bottom: 0;
+}
+
+.gyik a {
+  float: left;
+  font-family: "brandon-grotesque";
+}
+
+@media only screen and (min-width: 320px) {
+  header .theodora-logo {
+    left: 10px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .index .logo-wrapper a, .index .logo-wrapper .bird {
+    float: none;
+    margin: 0 auto 20px !important;
+  }
+  h1 {
+    font-size: 25px;
+    line-height: 31px;
+  }
+  .index .custom-h {
+    margin: 10px auto;
+  }
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .mountain.custom {
+    margin-top: -990px !important;
+  }
+  .mountain.custom .theodora-water {
+    bottom: -350px !important;
+  }
+  .gyik h1 {
+    padding: 86px 0 27px;
+  }
+  .mountain.custom-2 .theodora-water {
+    bottom: -350px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  header .mobile-icon {
+    display: block;
+  }
+  header nav {
+    background-color: rgba(0, 81, 156, 0.95);
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 60px;
+  }
+  header nav li {
+    display: block;
+    text-align: center;
+  }
+  header nav a {
+    font-size: 18px;
+  }
+  .gyik a {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .form-control [type="text"], .form-control [type="email"], .form-control select {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mountain.custom {
+    margin-top: -1045px !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .index .prize-wrapper div {
+    float: none;
+    margin: 15px auto !important;
+  }
+  .mountain .theodora-water {
+    left: -15px;
+    bottom: -400px;
+  }
+  .mountain.custom {
+    margin-top: -820px;
+  }
+  .mountain.custom .theodora-water {
+    bottom: -375px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header li a {
+    padding: 0 6px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .mountain {
+    margin-top: -110px;
+  }
+}

@@ -1,0 +1,40 @@
+/* TYPOGRAPHY */
+h1 {
+    text-align: center;
+    letter-spacing: 0.020em;
+    font-size: 32px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #0e4096;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #0e4096;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #0e4096;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4 {
+    font-family: $opensans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 23px;
+    color: #0e4096;
+    text-align: center;
+    text-transform: uppercase;
+}

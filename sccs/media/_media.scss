@@ -1,0 +1,109 @@
+@media only screen and (min-width: 320px) {
+    header .theodora-logo {
+        left: 10px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .index .logo-wrapper a, .index .logo-wrapper .bird {
+        float: none;
+        margin: 0 auto 20px !important;
+    }
+
+    h1 {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+    .index .custom-h {
+        margin: 10px auto;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .mountain.custom{
+    	margin-top: -990px !important;
+    }
+    .mountain.custom .theodora-water{
+    	bottom: -350px !important;
+    }
+    .gyik h1{
+    	    padding: 86px 0 27px;	
+    }
+    .mountain.custom-2 .theodora-water{
+    	bottom: -350px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    header .mobile-icon {
+        display: block;
+    }
+
+    header nav {
+        background-color: rgba(0, 81, 156, 0.95);
+        display: none;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 60px;
+
+        li {
+            display: block;
+            text-align: center;
+        }
+
+        a {
+            font-size: 18px;
+        }
+    }
+    .gyik a{
+    	float: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .form-control [type="text"], .form-control [type="email"], .form-control select {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+	.mountain.custom{
+		margin-top: -1045px !important;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+    .index .prize-wrapper div {
+        float: none;
+        margin: 15px auto !important;
+    }
+
+    .mountain .theodora-water {
+        left: -15px;
+        bottom: -400px;
+    }
+    .mountain.custom{
+    	margin-top: -820px;
+    	.theodora-water{
+    		bottom: -375px;
+    	}
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header li a {
+        padding: 0 6px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .mountain {
+        margin-top: -110px;
+    }
+}
